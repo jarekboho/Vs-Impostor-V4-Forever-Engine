@@ -5638,6 +5638,13 @@ class PlayState extends MusicBeatState
 
 			var easeLerp = 0.95;
 			// camera stuffs
+			if (curStage == 'cargo' && Conductor.songPosition >= 0 && Conductor.songPosition < 1200 ){
+			}
+			else if (curStage == 'cargo' && cargoReadyKill){
+			}
+			else if (curStage == 'finalem' && Conductor.songPosition >= 0 && Conductor.songPosition < 9600){
+			}
+			else
 			FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom + forceZoom[0], FlxG.camera.zoom, easeLerp);
 			for (hud in allUIs)
 				hud.zoom = FlxMath.lerp(1 + forceZoom[1], hud.zoom, easeLerp);
