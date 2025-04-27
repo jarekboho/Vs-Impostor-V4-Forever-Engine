@@ -1158,7 +1158,7 @@ class OriginalChartingState extends MusicBeatState
 
 			var note:Note = ForeverAssets.generateArrow(PlayState.assetModifier, daStrumTime, daNoteInfo % 4, daNoteType, 0);
 			note.sustainLength = daSus;
-			note.noteType = 'daNoteType';
+			note.noteType = '';
 			note.setGraphicSize(GRID_SIZE, GRID_SIZE);
 			note.updateHitbox();
 			note.x = Math.floor(daNoteInfo * GRID_SIZE);
