@@ -408,7 +408,7 @@ class PlayState extends MusicBeatState
 		gf = new Character();
 		gf.adjustPos = false;
 		gf.setCharacter(300, 100, stageBuild.returnGFtype(curStage));
-		gf.scrollFactor.set(0.95, 0.95);
+		gf.scrollFactor.set(1, 1);
 		if (curStage == 'ejected')
 		{
 		gf.scrollFactor.set(0.7, 0.7);
