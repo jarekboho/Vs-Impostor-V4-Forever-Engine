@@ -535,6 +535,7 @@ class FreeplayState extends MusicBeatState
 							if (index == curSelected && threadActive)
 							{
 								mutex.acquire();
+								if(Assets.exists('assets/songs/' + songs[curSelected].songName.toLowerCase() + '/Inst.ogg'))
 								songToPlay = inst;
 								mutex.release();
 								portrait.animation.play(songs[curSelected].songName);
