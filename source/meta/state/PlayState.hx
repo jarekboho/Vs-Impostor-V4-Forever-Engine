@@ -191,7 +191,6 @@ class PlayState extends MusicBeatState
 	var scaryJerma:FlxSprite;
 
 	// torture
-	var windowlights:FlxSprite;
 	var leftblades:FlxSprite;
 	var rightblades:FlxSprite;
 	var montymole:FlxSprite;
